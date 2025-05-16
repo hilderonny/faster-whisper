@@ -8,16 +8,13 @@ Dieses Repository dient als funktionsfähige Grundlage für Anwendungen, die auf
 2. [python-3.11.9.zip](python-3.11.9.zip) entpacken und den enthaltenen Unterordner in `./python` umbenennen
 3. Python Bibliotheken installieren mit `python\python -m pip install faster-whisper==0.8.0`
 4. [cuBLAS.and.cuDNN_CUDA11_win_v4.7z](https://github.com/Purfview/whisper-standalone-win/releases/download/libs/cuBLAS.and.cuDNN_CUDA11_win_v4.7z) herunterladen und die enthaltenen DLLs nach `python/Lib/site-packages/ctranslate` entpacken
+5. [vc_redist.x64.exe](./vc_redist.x64.exe]) bei Bedarf installieren
 
+Ausprobieren geht so, dabei wird beim ersten Aufruf das `tiny` Modell heruntergeladen (ca. 75 MB):
 
-Hier ist ein portables Python 3.11 und alle aktuellen KNN-Modelle sowie CUDA-DLLs enthalten.
-
-Ausprobieren geht so:
-
-1. Repository klonen
-2. [vc_redist.x64.exe](./vc_redist.x64.exe]) bei Bedarf installieren
-2. Konsole öffnen
-3. `.\python\python.exe test.py` ausführen
+```cmd
+python\python test.py
+```
 
 Bei Erfolg sollte die Datei `test.mp3` transkribiert und der Text angezeigt werden.
 
