@@ -7,7 +7,7 @@ Dieses Repository dient als funktionsfähige Grundlage für Anwendungen, die auf
 1. Dieses Repository klonen
 2. [python-3.11.9.zip](python-3.11.9.zip) entpacken und den enthaltenen Unterordner in `./python` umbenennen
 3. Python Bibliotheken installieren mit `python\python -m pip install faster-whisper==0.8.0`
-4. [cuBLAS.and.cuDNN_CUDA11_win_v4.7z](https://github.com/Purfview/whisper-standalone-win/releases/download/libs/cuBLAS.and.cuDNN_CUDA11_win_v4.7z) herunterladen und die enthaltenen DLLs nach `python/Lib/site-packages/ctranslate` entpacken
+4. [cuBLAS.and.cuDNN_CUDA11_win_v4.7z](https://github.com/Purfview/whisper-standalone-win/releases/download/libs/cuBLAS.and.cuDNN_CUDA11_win_v4.7z) herunterladen und die enthaltenen DLLs nach `python/Lib/site-packages/ctranslate2` entpacken
 5. [vc_redist.x64.exe](./vc_redist.x64.exe]) bei Bedarf installieren
 
 Ausprobieren geht so, dabei wird beim ersten Aufruf das `tiny` Modell heruntergeladen (ca. 75 MB):
